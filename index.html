@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehder & Oliveira</title>
+    <link rel="shortcut icon" href="CSS/img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts - Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- CCS DO PROJETO -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3" id="navbarall">
+
+            <div id="navbarInicio">
+                <img  src="img/icon 1.jpg" alt="Rehder & Oliveira">
+                <h2>Rehder & Oliveira</h2>
+            </div>
+
+            <button class="navbar-toggler"
+                id="navbarHamburger"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-items"
+                aria-controls="navbar-items"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link primary-color">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- SLIDER -->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" class="carousel-teste-igor" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    class="active"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img-principal.png" alt="Casa 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5></h5><!--Nome do carrosel-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img-principal-2.png" alt="Casa 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5></h5><!--Nome do carrosel-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img-principal-3.jpg" alt="Casa 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5></h5><!--Nome do carrosel-->
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide="prev"
+                >
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide="next"
+                >
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <!-- MINI BANNERS -->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+              
+                <div class="col-12 col-md-4" ">
+                    <div class="card text-center" id="cards-edit">
+                        <i class="bi bi-house-fill" id="houseEdit"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" >Obras Financiadas
+                            </h5>
+                            <p class="card-text ">
+                                Quem nunca sonhou em ter a sua casa própria ?
+                                <br>
+                                Aqui antecipamos seu sonho!
+                                <br>
+                                Realizamos todo processo de financiamento e construção da sua casa.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" ">
+                    <div class="card text-center" id="cards-edit">
+                        <i class="bi bi-clipboard" id="houseEdit"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" >Regularização de Imóveis
+                            </h5>
+                            <p class="card-text ">Você sabia que o seu imóvel se torna mais valorizado quando você tem ele documentado?
+                                <br>
+                                Esse processo se chama <strong>Regularização de imóveis</strong> e nesse processo somos especialista!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" ">
+                    <div class="card text-center" id="cards-edit">
+                        <i class="bi bi-building" id="houseEdit"></i>
+                        <div class="card-body">
+                            <h5 class="card-title" >Projetos Estruturais
+                            </h5>
+                            <p class="card-text ">
+                                Uma obra deve ter segurança e economia, por isso nossos projetos estruturais são baseados em três pilares:
+                                <br>
+                                Segurança 
+                                <br>
+                                Economia 
+                                <br>
+                                Execução
+                            </p>
+                            </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Portfólio</h2>
+            <p class="subtitle secondary-color">Somos especialista e referencia no mercado de construção de obras financiadas, 
+                regularização de imoveis, projetos estruturais
+            </p>
+        </div>
+        <div class="col-12" id="featured-images">
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-1.png"  id="newImgFluid" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-2.jpeg" id="newImgFluid" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-3.jpeg"  id="newImgFluid" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-4.jpeg"  id="newImgFluid" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-7.png" id="newImgFluid" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="img/portfolio-8.png"  id="newImgFluid" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="container" id="info-container" >
+        <div class="col-12">
+          <h2 class="title primary-color" id="sobreNos1">Sobre nós</h2>
+        </div>
+
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-5" id="info-banner">
+                    <img
+                    src="img/sobre-nos.png"
+                    class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12" id="ajuste-123">
+                            <h2 class="title primary-color">Por que nos contratar?</h2>
+                            <p class="subtitle secondary-color">Nossa empresa realiza o serviço sempre pensando em realizar o melhor atendimento ao nossos clientes, resolvendo os problemas e realizando  sonhos.
+                                Atualmente atuamos nas seguintes cidades: Machado, Poço fundo, Carvalhópolis/MG, São João da Boa Vista/SP</p>
+                        </div>
+
+                        <div class="col-12" id="info-number">
+                            <div class="row" id="numberEdit2">
+
+                                <div class="col-4">
+                                    <h3 class="primary-color">5</h3>
+                                    <p class="secondary-color">Anos de experiencia</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <h3 class="primary-color">4</h3>
+                                    <p class="secondary-color">Cidades</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <h3 class="primary-color">243</h3>
+                                    <p class="secondary-color">Projetos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- FOOTER TOP -->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4"><h2>Rehder & Oliveira</h2></div>
+                        <div class="col-4" id="social-icons">
+                            <a href="https://www.facebook.com/Engenhariacomro" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/engenhariacomro/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="" target="_blank"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER DETAILS -->
+                <div class="col-12 footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Fique por dentro das novidade</h4>
+                            <p class="secondary-color footer-subtitulos">Inscreva-se para receber informações em primeira mão!</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                                </div>
+                                <button type="submit" class="btn btn-dark">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="secondary-color footer-subtitulos">(35) 9 8898-6457</p>
+                            <p class="secondary-color footer-subtitulos">contato@rehderoliveira.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar procurando por:</h4>
+                                <div class="col-6">
+                                    <h4 class="footer-subtitulos">Institucional</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Sobre Nós</a></li>
+                                        <li><a href="#" class="secondary-color">Política de Privacidade</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h4 class="footer-subtitulos">Dúvidas</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Prazos de Entrega</a></li>
+                                        <li><a href="#" class="secondary-color">Formas de Pagamento</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color footer-subtitulos">Rehder & Oliveira &copy; 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
